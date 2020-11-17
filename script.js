@@ -17,7 +17,7 @@ function pridetiUzduoti(){
     } else {
 
         let eilute = document.createElement("tr");
-        pridetiUzduoti.appendChild(eilute);
+        vedamLentele.appendChild(eilute);
 
         let pazymekStulpelis = document.createElement("td");
         let pazymek = document.createElement("input");
@@ -34,7 +34,8 @@ function pridetiUzduoti(){
             } else {
                 stilius.style.textDecoration = "none";
                 stilius.style.opacity = "1";
-            }
+            }}
+        
 
 
             let task = document.getElementById("taskName").value;
@@ -87,7 +88,7 @@ function pridetiUzduoti(){
 
             istrintiBtn.addEventListener("click", function (e) {
                 e.preventDefault();
-                trintiEilute(e.target.parentNote.parentNote);
+                trintiEilute(e.target.parentNode.parentNode);
 
             }, false);
         }
@@ -102,7 +103,7 @@ function pridetiUzduoti(){
 
             function trintiEilute(row) {
                 vedamLentele.removeChild(row);
-            } }
+            } 
                 
       
       
