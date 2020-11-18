@@ -106,4 +106,4 @@ function pridetiUzduoti(){
             } 
                 
       
-      
+  // pataisytas
